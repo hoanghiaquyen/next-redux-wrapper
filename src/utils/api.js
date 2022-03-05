@@ -7,14 +7,14 @@ export const getProductList = (limit) =>
     method: "GET",
   });
 
-export const getUserInfor = (userId) =>
+export const getUserInfor = () =>
   makeRequest({
-    url: `${API_URL}/users/${userId}`,
+    url: `${API_URL}/users/1`,
     method: "GET",
   });
 
-export const getUserCart = (userId) =>
+export const getUserCart = () =>
   makeRequest({
-    url: `${API_URL}/carts/${userId}`,
+    url: `${API_URL}/carts/1`,
     method: "GET",
   });

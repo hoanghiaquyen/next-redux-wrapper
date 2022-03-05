@@ -1,7 +1,10 @@
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
-import { triggerProductSearch, clearProductSearch } from "modules/shop";
+import {
+  triggerProductSearch,
+  clearProductSearch,
+} from "modules/shop/shopReducer";
 import {
   Flex,
   Text,

@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { triggerProductList } from "modules/shop";
+import { triggerProductList } from "modules/shop/shopActions";
 import { Box } from "@chakra-ui/react";
 import { ProductCard, SearchBox } from "components/product";
 import { SimpleGrid } from "@chakra-ui/react";

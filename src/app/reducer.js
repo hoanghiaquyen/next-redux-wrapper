@@ -1,4 +1,6 @@
-import { shop } from "modules/shop";
+import cartReducer from "modules/cart/cartReducer";
+import shopReducer from "modules/shop/shopReducer";
+import userReducer from "modules/user/userReducer";
 import { HYDRATE } from "next-redux-wrapper";
 import { combineReducers } from "redux";
 
@@ -35,7 +37,9 @@ function hydrate(state = {}, action) {
 
 const combineReducer = combineReducers({
   serverCheck,
-  shop: shop,
+  shop: shopReducer,
+  user: userReducer,
+  cart: cartReducer,
 });
 
 function rootReducer(state, action) {

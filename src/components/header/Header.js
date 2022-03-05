@@ -1,8 +1,10 @@
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { Box, Container, Flex, IconButton } from "@chakra-ui/react";
 import useTranslation from "next-translate/useTranslation";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { FaGithub } from "react-icons/fa";
 import { LangSwitch, NavMenu } from "../menu";
 
 function Header(props) {
@@ -45,6 +47,13 @@ function Header(props) {
             <Box mr="auto">
               <NavMenu t={t} />
             </Box>
+            <Link
+              isExternal
+              mr={6}
+              href="https://github.com/hnquyen/next-redux-wrapper"
+            >
+              <FaGithub size={22} color="#4A5568" />
+            </Link>
             <Box mr={4}>
               <LangSwitch lang={lang} />
             </Box>
