@@ -2,10 +2,6 @@ import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
 import {
-  triggerProductSearch,
-  clearProductSearch,
-} from "modules/shop/shopReducer";
-import {
   Flex,
   Text,
   CloseButton,
@@ -19,6 +15,10 @@ import {
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import useTranslation from "next-translate/useTranslation";
+import {
+  clearProductSearch,
+  triggerProductSearch,
+} from "modules/shop/shopActions";
 
 const SearchBox = () => {
   const { t } = useTranslation("common");
